@@ -3,8 +3,8 @@ import numpy as np
 import pyautogui as pag
 import psutil
 
-eye_cascade = cv2.CascadeClassifier('appData/haarcascade_eye.xml')
-face_cascade = cv2.CascadeClassifier('appData/haarcascade_frontalface_default.xml')
+eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
+face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 previousEyes = currentEyes = "0"
 runningState = False
 
