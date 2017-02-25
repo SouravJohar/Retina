@@ -33,7 +33,6 @@ while True:
                 if ey > 40 and ey < 100:
                     currentEyes = "1"
                     cv2.rectangle(roi_color,(ex,ey),(ex+ew,ey+eh),(0,255,0),2)
-        #print previousEyes + currentEyes
         if previousEyes + currentEyes == "01":
             pag.hotkey('Shift', '2') #resume
         if previousEyes + currentEyes == "10":
